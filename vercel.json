@@ -1,12 +1,17 @@
 {
-  "framework": "vite",
-  "buildCommand": "npx tsc -b && npx vite build",
-  "outputDirectory": "dist",
-  "functions": {},
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/client/$1"
     }
   ]
 }
