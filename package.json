@@ -19,6 +19,31 @@
   }
 }
 
+{
+  "name": "campus-link",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "npx tsc -b && npx vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
+
   
   "dependencies": {
     "react": "^19.1.0",
