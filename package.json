@@ -11,6 +11,15 @@
     "start": "vite",
     "test": "vitest"
   },
+{
+  "scripts": {
+    "build": "npx tsc -b && npx vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  }
+}
+
+  
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
